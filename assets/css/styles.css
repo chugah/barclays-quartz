@@ -1,0 +1,102 @@
+video {
+  object-fit: fill;
+  width: 100%;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ad {
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+  width: 100%;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+}
+
+.active-ad {
+  opacity: 1;
+  z-index: 2;
+}
+
+.info {
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+}
+
+.content {
+  padding: 20px;
+}
+
+.ad-description, .find-out-more {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.ad-description {
+  color: #000;
+  font-size: 16px;
+  display: block;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.find-out-more__btn {
+  background-color: #107ac8;
+  border-radius: 31px;
+  -moz-border-radius: 31px;
+  -webkit-border-radius: 31px;
+  border: 2px solid #107ac8;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 12px 14px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+}
+
+.find-out-more__bt:hover {
+  background-color: #0f6db3;
+}
+
+@media screen and (max-width: 767px) {
+  video {
+    height: 430px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  video {
+    height: 520px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .ad-group {
+    width: 50% !important;
+  }
+
+  .flex-container {
+    flex-direction: row-reverse;
+  }
+
+  video {
+    height: 520px;
+  }
+}

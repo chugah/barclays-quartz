@@ -1,8 +1,8 @@
-var slides = document.querySelectorAll('.ad-group .ad'); // grab all slides from container
-var currentSlide = 0; // keep track of current slide
-var slideInterval = setInterval(nextSlide, 5000); // show slide every 5 seconds
-var next = document.querySelector('.next');
-var previous = document.querySelector('.previous');
+const slides = document.querySelectorAll('.ad-group .ad'); // grab all slides from container
+let currentSlide = 0; // keep track of current slide
+const slideInterval = setInterval(nextSlide, 5000); // show slide every 5 seconds
+const next = document.querySelector('.next');
+const previous = document.querySelector('.previous');
 
 $('.video-section video').on('pause', function() {
   slideInterval = setInterval(nextSlide, 5000);

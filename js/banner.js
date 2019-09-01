@@ -12,7 +12,6 @@ function goToSlide(n) {
   slides[currentSlide].className = 'ad';
   currentSlide = (currentSlide+1) % slides.length;
   slides[currentSlide].className = 'ad active-ad';
-  document.querySelector('.slideCount').innerHTML = currentSlide + 1 +'/'+ slideCount;
 }
 
 function nextSlide() {

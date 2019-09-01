@@ -15,9 +15,14 @@ h2 {
   flex-direction: column;
 }
 
+.ad-group {
+  position: relative;
+}
+
 .ad {
   height: 100%;
   opacity: 0;
+  position: absolute;
   transition: opacity 1s;
   width: 100%;
   z-index: 1;

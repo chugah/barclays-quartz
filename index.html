@@ -10,46 +10,69 @@
   </head>
   <body>
     <main>
-      <div class="flex-container">
-        <div class="video-section">
-          <video autoplay muted loop>
-            <source src="./assets/video/Barclays_EdTech.mp4" type="video/mp4">
-          </video>
+      <div class="d-flex flex-row-reverse justify-content-around m-4">
+        <div class="d-flex flex-column pl-5">
+          <div class="video-section pl-5">
+            <video class="embed-responsive" autoplay muted loop>
+              <source src="./assets/video/Barclays_EdTech.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
 
         <div class="ad-group">
-          <div class="ad active-ad">
-            <div class="info">
-              <div class="content">
-                <h2>EdTech: four key<br />investment areas</h2>
-                <p class="ad-description">Explore education technology's <br/>
-                  billion dollar potential
-                </p>
-                <div class="find-out-more">
-                  <img src="./assets/images/logo/barclays-logo.png" class="logo" alt="Barclays logo" />
-                  <a href="https://qz.com" target="_blank" class="find-out-more__cta">Find out more</a>
+          <div class="flex-fill text-left p-4">
+            <div class="ad active-ad">
+              <div class="d-flex flex-column">
+                <div class="info">
+                  <div class="content pl-4">
+                    <h2>EdTech: four key<br />investment areas</h2>
+                    <p class="ad-description">Explore education technology's <br/>
+                      billion dollar potential
+                    </p>
+                    <div class="find-out-more">
+                      <div class="d-flex flex-column">
+                        <img src="./assets/images/logo/barclays-logo.png" class="logo" alt="Barclays logo" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="find-out-more">
+                    <div class="d-flex flex-column pl-4 mt-7">
+                      <a href="https://qz.com" target="_blank" class="find-out-more__cta">Find out more</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="ad">
-            <div class="info">
-              <div class="content">
-                <h2>Heading 2</h2>
-                <p class="ad-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div class="find-out-more">
-                    <a href="https://creative.qz.com" target="_blank" class="find-out-more__cta">Find out more</a>
+            <div class="ad">
+              <div class="d-flex flex-column">
+                <div class="info">
+                  <div class="content">
+                    <h2>Heading 2</h2>
+                    <p class="ad-description">Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit.
+                    </p>
+                    <div class="find-out-more">
+                        <a href="https://creative.qz.com" target="_blank" class="find-out-more__cta">Find out more</a>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div class="controls">
+              <div class="d-flex flex-row">
+                <button class="previous">
+                  <img src="./assets/images/carousel/left_arrow.png" class="img-fluid left-arrow" alt="left arrow" />
+                </button>
+                <button class=" next">
+                  <img src="./assets/images/carousel/right_arrow.png" class="img-fluid right-arrow" alt="right arrow" />
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./js/banner.js"></script>
   </body>
 </html>

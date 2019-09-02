@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'PT_Serif-Web-Regular';
+    src: url('../assets/fonts/PT_Serif-Web-Regular.woff2')
+}
+
+@font-face {
+    font-family: 'MaisonNeue-Medium';
+    src: url('../assets/fonts/MaisonNeue-Medium.woff2')
+}
+
 *,
 ::after,
 ::before {
@@ -13,14 +23,12 @@ html {
 }
 
 h2 {
-  color: #14395a;
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: .5rem;
 }
 
 p {
-  color: #a0a0a0;
   margin-bottom: 1rem;
 }
 
@@ -80,11 +88,21 @@ video {
   width: 100%;
 }
 
-.content {
+.content-edTech {
   border-left: 5px solid #4cace9;
   border-radius: 0.5%;
+  color: #a0a0a0;
 }
 
+.edTech-h2 {
+  color: #14395a;
+}
+
+.content-cineworld {
+  color: #fff;
+  font-family: 'MaisonNeue-Medium', sans-serif;
+  letter-spacing: 1px;
+}
 .text-left {
   text-align: left;
 }
@@ -125,9 +143,15 @@ video {
   z-index: 2;
 }
 
-.logo {
+.logo-edTech {
   height: 10%;
   width: 20%;
+}
+
+.logo-cineworld {
+  height: 30%;
+  margin-bottom: 1.5rem;
+  width: 60%;
 }
 
 
@@ -140,7 +164,11 @@ video {
   margin-top: 2%;
 }
 
-.find-out-more__cta {
+.watch-the-story {
+  margin-top: 4.2rem;
+}
+
+.find-out-more__cta, .watch-the-story__cta {
   background-color: #107ac8;
   border: 2px solid #107ac8;
   border-radius: 31px;
@@ -151,15 +179,30 @@ video {
   font-family: MaisonNeue-Medium,  sans-serif;
   font-weight: 700;
   font-size: 0.9em;
-  padding: 4px 10px;
   text-align: center;
   text-decoration: none;
   text-shadow: 2px 0 #107ac8;
+}
+
+.find-out-more__cta {
+  padding: 4px 10px;
   width: 15%;
 }
 
-.find-out-more__cta:hover {
+.watch-the-story__cta {
+  padding: 5px 20px;
+  width: 20%;
+}
+
+.find-out-more__cta:hover, .watch-the-story:hover {
   background-color: #0f6db3;
+}
+
+#cineworld {
+  background-color: #283c58;
+  height: 520px;
+  margin-top: -1.5rem;
+  width: 21.2rem;
 }
 
 .previous, .next {

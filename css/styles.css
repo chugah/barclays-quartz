@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'PT_Serif-Web-Regular';
-    src: url('../assets/fonts/PT_Serif-Web-Regular.woff2')
-}
-
-@font-face {
     font-family: 'MaisonNeue-Medium';
     src: url('../assets/fonts/MaisonNeue-Medium.woff2')
 }
@@ -88,6 +83,16 @@ video {
   width: 100%;
 }
 
+.justify-content-center {
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.align-content-center {
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
 .content-edTech {
   border-left: 5px solid #4cace9;
   border-radius: 0.5%;
@@ -101,7 +106,6 @@ video {
 .content-cineworld {
   color: #fff;
   font-family: 'MaisonNeue-Medium', sans-serif;
-  letter-spacing: 1px;
 }
 .text-left {
   text-align: left;
@@ -161,7 +165,7 @@ video {
 }
 
 .find-out-more {
-  margin-top: 2%;
+  margin-top: 3rem;
 }
 
 .watch-the-story {
@@ -176,22 +180,15 @@ video {
   -webkit-border-radius: 31px;
   color: #fff;
   cursor: pointer;
-  font-family: MaisonNeue-Medium,  sans-serif;
+  font-family: 'MaisonNeue-Medium',  sans-serif;
   font-weight: 700;
   font-size: 0.9em;
+  margin-top: 1rem;
+  padding: 4px 10px;
   text-align: center;
   text-decoration: none;
   text-shadow: 2px 0 #107ac8;
-}
-
-.find-out-more__cta {
-  padding: 4px 10px;
-  width: 15%;
-}
-
-.watch-the-story__cta {
-  padding: 5px 20px;
-  width: 20%;
+  width: 8rem;
 }
 
 .find-out-more__cta:hover, .watch-the-story:hover {
@@ -202,7 +199,7 @@ video {
   background-color: #283c58;
   height: 520px;
   margin-top: -1.5rem;
-  width: 21.2rem;
+  width: 22.7rem;
 }
 
 .previous, .next {
@@ -210,6 +207,7 @@ video {
   border: none;
   cursor: pointer;
   outline: none;
+  margin-top: 1rem;
   width: 25%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -217,17 +215,111 @@ video {
 }
 
 .left-arrow {
-  margin: 11rem 0 0 -5.5rem;
+  margin: 12.5rem 0 0 -5.5rem;
 }
 
 .right-arrow {
-  margin: 11rem 0 0 13rem;
+  margin: 12.5rem 0 0 13.5rem;
 }
 
-@media (min-width: 576px) {
-    html {
-      font-size: 0.8rem;
-    }
+@media (max-width: 414px) {
+  .ad {
+    margin: 10% 0 5% 0;
+  }
+
+  .content-cineworld {
+    margin: 0 0 0 3rem;
+  }
+
+  .find-out-more__cta {
+    margin: -5.8rem 0 0 14.5rem;
+  }
+
+  .info {
+    margin: 0 0 0 5%;
+  }
+
+  .left-arrow {
+    margin: 10rem 0 0 2rem;
+  }
+
+  .logo-edTech {
+    height: 20%;
+    margin: 2rem 0 0 0;
+    width: 40%;
+  }
+
+  .previous, .next {
+    width: 12.5%;
+  }
+
+  .right-arrow {
+    margin: 10rem 0 0 19rem;
+  }
+
+  .watch-the-story__cta {
+    margin-top: 2rem !important;
+  }
+
+  #cineworld {
+    height: 275px;
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 767px) {
+  html {
+    font-size: 0.8rem;
+  }
+
+  .ad {
+    margin: 2rem 0 0 0;
+  }
+
+  .ad-description {
+    margin: 0 0 1.3rem 0;
+  }
+
+  .content-cineworld {
+    margin: 0 0 0 2.7rem;
+  }
+
+  .find-out-more__cta {
+    margin: -5.8rem 0 0 15rem;
+  }
+
+  .info {
+    margin: 0 0 0 5%;
+  }
+
+  .left-arrow {
+    margin: 10rem 0 0 2rem;
+  }
+
+  .logo-edTech {
+    height: 12.5%;
+    margin: 4rem 0 0 0;
+    width: 25%;
+  }
+
+  .previous, .next {
+    width: 10%;
+  }
+
+  .right-arrow {
+    margin: 10rem 0 0 19rem;
+  }
+
+  .watch-the-story {
+    margin: 0;
+  }
+
+  #cineworld {
+    height: 275px;
+    margin-top: 0;
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -246,8 +338,8 @@ video {
     }
 }
 
-@media (min-width: 1200px) {
-    html {
-      font-size: 1.5rem;
-    }
+@media (min-width: 1606px) {
+  #cineworld {
+    width: 23.8rem;
+  }
 }

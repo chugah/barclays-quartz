@@ -10,9 +10,9 @@
   </head>
   <body>
     <main>
-      <div class="d-flex flex-row-reverse justify-content-around m-4">
-        <div class="d-flex flex-column pl-5">
-          <div class="video-section pl-5">
+      <div class="d-flex flex-row-reverse m-4" id="toggle-flex">
+        <div class="d-flex flex-column pl-5" id="toggle-padding-video">
+          <div class="video-section">
             <video class="embed-responsive" autoplay muted loop>
               <source src="./assets/video/Barclays_EdTech.mp4" type="video/mp4">
             </video>
@@ -20,7 +20,7 @@
         </div>
 
         <div class="ad-group">
-          <div class="flex-fill text-left p-4">
+          <div class="flex-fill text-left p-4" id="toggle-padding-edTech">
             <div class="ad active-ad">
               <div class="d-flex flex-column">
                 <div class="info">
@@ -45,7 +45,7 @@
             </div>
 
             <div class="ad" id="cineworld">
-              <div class="flex-fill p-4">
+              <div class="flex-fill pl-4">
                 <div class="d-flex flex-column">
                   <div class="find-out-more">
                     <div class="d-flex flex-column">
@@ -81,6 +81,7 @@
       </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/window-resize.js"></script>
     <script src="./js/banner.js"></script>
   </body>
 </html>

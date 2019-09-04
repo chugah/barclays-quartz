@@ -191,10 +191,6 @@ video {
   width: 8rem;
 }
 
-.find-out-more__cta:hover, .watch-the-story:hover {
-  background-color: #0f6db3;
-}
-
 .previous, .next {
   background: none;
   border: none;
